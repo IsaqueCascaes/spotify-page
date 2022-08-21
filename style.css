@@ -99,8 +99,9 @@ navbar {
     justify-content: center;
     align-items: center;
     color: #fff;
+    background-image: url(./img/image\ 1.svg);
+    background-size: 100%;
 
-    background-image: url(https://sonosuite.com/wp-content/uploads/2022/01/users-listen-catalog-records-usa-2021.jpeg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
 }
@@ -299,16 +300,16 @@ footer {
         justify-content: center;
     }
 
-    .rights{
-display: none;
+    .rights {
+        display: none;
     }
 
-    
+
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .footer-info-items p {
         display: none;
     }
+
 }
-    
