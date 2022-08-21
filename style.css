@@ -1,0 +1,314 @@
+:root {
+    --default-green: #1DB954;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300&family=Open+Sans&family=Righteous&family=Roboto:ital@1&family=Sarala&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    background: var(--default-green);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #1ed760;
+    cursor: pointer;
+}
+
+.logo {
+    height: 2.2rem;
+    width: auto;
+}
+
+navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.navbar-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    height: 2.2rem;
+    width: auto;
+}
+
+.navbar-container ul {
+    display: flex;
+    list-style: none;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.navbar-container ul li {
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+.navbar-container ul li:hover {
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.navbar-container ul li:nth-child(3) {
+    border-right: 1px solid #fff;
+}
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    background-image: url(https://sonosuite.com/wp-content/uploads/2022/01/users-listen-catalog-records-usa-2021.jpeg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase-container h2 {
+    font-size: 4rem;
+}
+
+.showcase-container p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+footer {
+    background: rgb(21, 21, 21);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-content {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-content .footer-menu {
+    margin: 0 60px;
+    list-style: none;
+}
+
+.footer-content .footer-menu .footer-menu-items {
+    margin: 25px 0;
+    transition: all 300ms ease;
+}
+
+.footer-content .footer-menu .footer-menu-items:hover {
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+.footer-content .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919498;
+    font-size: 0.8rem;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials i {
+    margin: 0 20px;
+    font-size: 1.7rem;
+    transition: all 300ms ease;
+}
+
+.socials i:hover {
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-items {
+    margin: 0 10px;
+    transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-items:hover {
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+.footer-info .rights .country {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-info .rights .country p {
+    transition: all 300ms ease;
+}
+
+.footer-info .rights .country p:hover {
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+.footer-info .rights .country .Brazil-flag {
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .showcase {
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/image\ 1.svg);
+    }
+
+    .showcase-container {
+        width: 80%;
+    }
+
+    navbar {
+        height: 8vh;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 50vh;
+        background: rgba(0, 0, 0, 0.6);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+
+    .navbar-container ul li:nth-child(3) {
+        display: none;
+    }
+
+    .navbar-items li {
+        margin-left: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .navbar-container.active {
+        transform: translateX(0)
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-info-items {
+        gap: 10px;
+        font-size: 12px;
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .rights {
+        gap: 10px;
+        font-size: 12px;
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rights{
+display: none;
+    }
+
+    
+}
+
+@media (min-width: 600px) {
+    .footer-info-items p {
+        display: none;
+    }
+}
+    
